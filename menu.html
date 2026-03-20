@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>菜單 — Edison Coffee 艾迪生咖啡</title>
+  <meta name="description" content="艾迪生咖啡廳菜單，義式咖啡、手沖單品、無咖啡因飲品與輕食。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════ NAV ══════════════════════════════════ -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      Edison Coffee
+      <span>艾迪生咖啡</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" data-i18n="nav.home">首頁</a>
+      <a href="beans.html" data-i18n="nav.beans">咖啡豆</a>
+      <a href="menu.html" class="active" data-i18n="nav.menu">菜單</a>
+      <a href="contact.html" data-i18n="nav.contact">聯絡我們</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="zh-hant">繁中</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+        <button class="lang-btn" data-lang="ko">한국어</button>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" data-i18n="nav.home">首頁</a>
+    <a href="beans.html" data-i18n="nav.beans">咖啡豆</a>
+    <a href="menu.html" data-i18n="nav.menu">菜單</a>
+    <a href="contact.html" data-i18n="nav.contact">聯絡我們</a>
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="zh-hant">繁中</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="ja">日本語</button>
+      <button class="lang-btn" data-lang="ko">한국어</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════ PAGE HERO ════════════════════════════ -->
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <span class="section-label" data-i18n="menu.hero.label">咖啡廳菜單</span>
+    <h1 class="section-title" data-i18n="menu.hero.title">每一杯，都是心意</h1>
+    <p class="section-sub" data-i18n="menu.hero.sub">使用自家烘焙豆，現點現萃</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ MENU GRID ════════════════════════════ -->
+<div class="container">
+  <div class="menu-grid">
+
+    <!-- ── Espresso ── -->
+    <div class="menu-category">
+      <h2 class="menu-cat-title" data-i18n="menu.cat.espresso">義式咖啡</h2>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.espresso.name">義式濃縮</div>
+          <div class="menu-item-desc" data-i18n="menu.espresso.desc">雙份濃縮，風味集中，展現豆子本質。</div>
+        </div>
+        <div class="menu-item-price">NT$80</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.americano.name">美式咖啡</div>
+          <div class="menu-item-desc" data-i18n="menu.americano.desc">濃縮加熱水，清晰而有層次。</div>
+        </div>
+        <div class="menu-item-price">NT$100</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.latte.name">拿鐵</div>
+          <div class="menu-item-desc" data-i18n="menu.latte.desc">濃縮搭配綿密奶泡，日常的安慰。</div>
+        </div>
+        <div class="menu-item-price">NT$130</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.cappuccino.name">卡布奇諾</div>
+          <div class="menu-item-desc" data-i18n="menu.cappuccino.desc">傳統義式比例，濃郁奶沫覆頂。</div>
+        </div>
+        <div class="menu-item-price">NT$130</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.flatwhite.name">馥列白</div>
+          <div class="menu-item-desc" data-i18n="menu.flatwhite.desc">雙份espresso加少量奶，咖啡感更強。</div>
+        </div>
+        <div class="menu-item-price">NT$140</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.cortado.name">科塔多</div>
+          <div class="menu-item-desc" data-i18n="menu.cortado.desc">濃縮與等量牛奶，甜中帶勁。</div>
+        </div>
+        <div class="menu-item-price">NT$110</div>
+      </div>
+    </div>
+
+    <!-- ── Filter / Cold Brew ── -->
+    <div class="menu-category">
+      <h2 class="menu-cat-title" data-i18n="menu.cat.filter">手沖 · 冷萃</h2>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.pourover.name">手沖單品</div>
+          <div class="menu-item-desc" data-i18n="menu.pourover.desc">依當日豆款萃取，每杯手工注水。</div>
+        </div>
+        <div class="menu-item-price">NT$160</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.coldbrew.name">冷萃咖啡</div>
+          <div class="menu-item-desc" data-i18n="menu.coldbrew.desc">低溫長時間浸泡12小時，滑順甘甜。</div>
+        </div>
+        <div class="menu-item-price">NT$150</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.icedpourover.name">冰手沖</div>
+          <div class="menu-item-desc" data-i18n="menu.icedpourover.desc">熱萃直接降冰，鎖住花果香氣。</div>
+        </div>
+        <div class="menu-item-price">NT$170</div>
+      </div>
+    </div>
+
+    <!-- ── Non-Coffee ── -->
+    <div class="menu-category">
+      <h2 class="menu-cat-title" data-i18n="menu.cat.noncoffee">無咖啡因系列</h2>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.matcha.name">抹茶拿鐵</div>
+          <div class="menu-item-desc" data-i18n="menu.matcha.desc">宇治抹茶粉搭配鮮奶，清香不苦澀。</div>
+        </div>
+        <div class="menu-item-price">NT$140</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.hojicha.name">焙茶拿鐵</div>
+          <div class="menu-item-desc" data-i18n="menu.hojicha.desc">炭焙烘茶帶有焦糖尾韻，溫潤宜人。</div>
+        </div>
+        <div class="menu-item-price">NT$140</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.fruittea.name">季節水果茶</div>
+          <div class="menu-item-desc" data-i18n="menu.fruittea.desc">以當季水果手工熬煮，清爽甜蜜。</div>
+        </div>
+        <div class="menu-item-price">NT$120</div>
+      </div>
+    </div>
+
+    <!-- ── Light Food ── -->
+    <div class="menu-category">
+      <h2 class="menu-cat-title" data-i18n="menu.cat.food">輕食</h2>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.cake.name">每日手作蛋糕</div>
+          <div class="menu-item-desc" data-i18n="menu.cake.desc">依當日口味供應，請洽店員確認。</div>
+        </div>
+        <div class="menu-item-price">NT$120</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.toast.name">厚片吐司</div>
+          <div class="menu-item-desc" data-i18n="menu.toast.desc">現烤奶油吐司，搭配季節果醬。</div>
+        </div>
+        <div class="menu-item-price">NT$90</div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <div class="menu-item-name" data-i18n="menu.scone.name">英式司康</div>
+          <div class="menu-item-desc" data-i18n="menu.scone.desc">外酥內軟，搭配奶油與果醬食用。</div>
+        </div>
+        <div class="menu-item-price">NT$100</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="menu-note-box" data-i18n="menu.note">
+    以上價格含稅。豆款依季節替換，以當日供應為準。
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ FOOTER ════════════════════════════════ -->
+<footer class="footer" style="margin-top:4rem;">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Edison Coffee</div>
+        <p data-i18n="footer.tagline">花蓮精品烘焙，每一杯都是故事</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.quicklinks">快速連結</h4>
+        <div class="footer-links">
+          <a href="index.html" data-i18n="nav.home">首頁</a>
+          <a href="beans.html" data-i18n="nav.beans">咖啡豆</a>
+          <a href="menu.html" data-i18n="nav.menu">菜單</a>
+          <a href="contact.html" data-i18n="nav.contact">聯絡我們</a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact">聯絡資訊</h4>
+        <div class="footer-contact-info">
+          <p>(03) 832-5678</p>
+          <p>hello@edisoncoffee.tw</p>
+          <p>LINE: @edisoncoffee</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom" data-i18n="footer.copyright">© 2025 艾迪生咖啡 Edison Coffee. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/i18n.js"></script>
+</body>
+</html>

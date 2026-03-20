@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>咖啡豆 — Edison Coffee 艾迪生咖啡</title>
+  <meta name="description" content="艾迪生咖啡精選單品與配方豆，水洗、蜜處理、日曬，產地直送新鮮烘焙。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════ NAV ══════════════════════════════════ -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      Edison Coffee
+      <span>艾迪生咖啡</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" data-i18n="nav.home">首頁</a>
+      <a href="beans.html" class="active" data-i18n="nav.beans">咖啡豆</a>
+      <a href="menu.html" data-i18n="nav.menu">菜單</a>
+      <a href="contact.html" data-i18n="nav.contact">聯絡我們</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="zh-hant">繁中</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+        <button class="lang-btn" data-lang="ko">한국어</button>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" data-i18n="nav.home">首頁</a>
+    <a href="beans.html" data-i18n="nav.beans">咖啡豆</a>
+    <a href="menu.html" data-i18n="nav.menu">菜單</a>
+    <a href="contact.html" data-i18n="nav.contact">聯絡我們</a>
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="zh-hant">繁中</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="ja">日本語</button>
+      <button class="lang-btn" data-lang="ko">한국어</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════ PAGE HERO ════════════════════════════ -->
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <span class="section-label" data-i18n="beans.hero.label">咖啡豆系列</span>
+    <h1 class="section-title" data-i18n="beans.hero.title">精選單品與配方</h1>
+    <p class="section-sub" data-i18n="beans.hero.sub">每一款都是我們對土地的誠意</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ BEAN LIST ════════════════════════════ -->
+<div class="container">
+  <div class="beans-list">
+
+    <!-- ── Bean 1: Ethiopia Yirgacheffe G1 ── -->
+    <article class="bean-card">
+      <div class="bean-card-header">
+        <div>
+          <h2 data-i18n="bean1.name">衣索比亞 耶加雪菲 G1</h2>
+          <div class="bean-badges">
+            <span class="badge badge-washed" data-i18n="beans.process.washed">水洗</span>
+            <span class="badge badge-roast" data-i18n="beans.roast.light">淺焙</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bean-body">
+        <div class="bean-meta">
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.origin">產地</span>
+            <span class="meta-value" data-i18n="bean1.origin">衣索比亞 Yirgacheffe</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.process">處理法</span>
+            <span class="meta-value" data-i18n="beans.process.washed">水洗</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.roast">烘焙度</span>
+            <span class="meta-value" data-i18n="beans.roast.light">淺焙</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.altitude">海拔</span>
+            <span class="meta-value">1800–2200m</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.variety">品種</span>
+            <span class="meta-value" data-i18n="bean1.variety">原生種</span>
+          </div>
+        </div>
+
+        <div class="bean-right">
+          <div class="bean-tasting">
+            <div class="label" data-i18n="beans.label.tasting">風味描述</div>
+            <div class="notes" data-i18n="bean1.tasting">茉莉花香、檸檬、桃子、柔順酸質</div>
+          </div>
+          <p class="bean-desc" data-i18n="bean1.desc">來自衣索比亞耶加雪菲產區的精品水洗豆，展現典型的花果香氣。</p>
+        </div>
+      </div>
+
+      <div class="bean-card-footer">
+        <div style="display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:end;flex-wrap:wrap;">
+          <div class="bean-pricing">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th data-i18n="beans.label.price">價格</th>
+                  <th data-i18n="beans.label.100g">100g</th>
+                  <th data-i18n="beans.label.200g">200g</th>
+                  <th data-i18n="beans.label.1lb">一磅 (454g)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>NT$</td>
+                  <td>320</td>
+                  <td>600</td>
+                  <td>1,200</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a href="contact.html" class="btn btn-green" data-i18n="beans.cta.order">聯絡訂購</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ── Bean 2: Costa Rica Tarrazu Honey ── -->
+    <article class="bean-card">
+      <div class="bean-card-header">
+        <div>
+          <h2 data-i18n="bean2.name">哥斯大黎加 塔拉珠 蜜處理</h2>
+          <div class="bean-badges">
+            <span class="badge badge-honey" data-i18n="beans.process.honey">蜜處理</span>
+            <span class="badge badge-roast" data-i18n="beans.roast.medium">中焙</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bean-body">
+        <div class="bean-meta">
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.origin">產地</span>
+            <span class="meta-value" data-i18n="bean2.origin">哥斯大黎加 Tarrazu</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.process">處理法</span>
+            <span class="meta-value" data-i18n="beans.process.honey">蜜處理</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.roast">烘焙度</span>
+            <span class="meta-value" data-i18n="beans.roast.medium">中焙</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.altitude">海拔</span>
+            <span class="meta-value">1500–1800m</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.variety">品種</span>
+            <span class="meta-value" data-i18n="bean2.variety">卡杜拉、卡杜艾</span>
+          </div>
+        </div>
+
+        <div class="bean-right">
+          <div class="bean-tasting">
+            <div class="label" data-i18n="beans.label.tasting">風味描述</div>
+            <div class="notes" data-i18n="bean2.tasting">黃糖、杏桃、榛果、絲滑口感</div>
+          </div>
+          <p class="bean-desc" data-i18n="bean2.desc">哥斯大黎加塔拉珠產區蜜處理豆，中焙呈現甜潤的堅果風味。</p>
+        </div>
+      </div>
+
+      <div class="bean-card-footer">
+        <div style="display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:end;flex-wrap:wrap;">
+          <div class="bean-pricing">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th data-i18n="beans.label.price">價格</th>
+                  <th data-i18n="beans.label.100g">100g</th>
+                  <th data-i18n="beans.label.200g">200g</th>
+                  <th data-i18n="beans.label.1lb">一磅 (454g)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>NT$</td>
+                  <td>300</td>
+                  <td>560</td>
+                  <td>1,100</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a href="contact.html" class="btn btn-green" data-i18n="beans.cta.order">聯絡訂購</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ── Bean 3: Rwanda Lake Kivu Washed ── -->
+    <article class="bean-card">
+      <div class="bean-card-header">
+        <div>
+          <h2 data-i18n="bean3.name">盧安達 基伍湖 水洗</h2>
+          <div class="bean-badges">
+            <span class="badge badge-washed" data-i18n="beans.process.washed">水洗</span>
+            <span class="badge badge-roast" data-i18n="beans.roast.medium_light">中淺焙</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bean-body">
+        <div class="bean-meta">
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.origin">產地</span>
+            <span class="meta-value" data-i18n="bean3.origin">盧安達 Lake Kivu</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.process">處理法</span>
+            <span class="meta-value" data-i18n="beans.process.washed">水洗</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.roast">烘焙度</span>
+            <span class="meta-value" data-i18n="beans.roast.medium_light">中淺焙</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.altitude">海拔</span>
+            <span class="meta-value">1700–2000m</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.variety">品種</span>
+            <span class="meta-value" data-i18n="bean3.variety">紅波旁</span>
+          </div>
+        </div>
+
+        <div class="bean-right">
+          <div class="bean-tasting">
+            <div class="label" data-i18n="beans.label.tasting">風味描述</div>
+            <div class="notes" data-i18n="bean3.tasting">黑醋栗、紅茶、細緻酸質、乾淨尾韻</div>
+          </div>
+          <p class="bean-desc" data-i18n="bean3.desc">盧安達基伍湖旁的精品水洗豆，帶有優雅的莓果與茶感。</p>
+        </div>
+      </div>
+
+      <div class="bean-card-footer">
+        <div style="display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:end;flex-wrap:wrap;">
+          <div class="bean-pricing">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th data-i18n="beans.label.price">價格</th>
+                  <th data-i18n="beans.label.100g">100g</th>
+                  <th data-i18n="beans.label.200g">200g</th>
+                  <th data-i18n="beans.label.1lb">一磅 (454g)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>NT$</td>
+                  <td>290</td>
+                  <td>540</td>
+                  <td>1,050</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a href="contact.html" class="btn btn-green" data-i18n="beans.cta.order">聯絡訂購</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ── Bean 4: Edison House Blend ── -->
+    <article class="bean-card">
+      <div class="bean-card-header">
+        <div>
+          <h2 data-i18n="bean4.name">艾迪生經典配方</h2>
+          <div class="bean-badges">
+            <span class="badge badge-washed" data-i18n="beans.process.washed">水洗</span>
+            <span class="badge badge-roast" data-i18n="beans.roast.medium">中焙</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bean-body">
+        <div class="bean-meta">
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.origin">產地</span>
+            <span class="meta-value" data-i18n="bean4.origin">多產區調配</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.process">處理法</span>
+            <span class="meta-value" data-i18n="beans.process.washed">水洗</span>
+          </div>
+          <div class="bean-meta-row">
+            <span class="meta-label" data-i18n="beans.label.roast">烘焙度</span>
+            <span class="meta-value" data-i18n="beans.roast.medium">中焙</span>
+          </div>
+        </div>
+
+        <div class="bean-right">
+          <div class="bean-tasting">
+            <div class="label" data-i18n="beans.label.tasting">風味描述</div>
+            <div class="notes" data-i18n="bean4.tasting">巧克力、焦糖、核桃、平衡醇厚</div>
+          </div>
+          <p class="bean-desc" data-i18n="bean4.desc">艾迪生招牌配方，專為義式機設計，適合美式、拿鐵等各式飲品。</p>
+        </div>
+      </div>
+
+      <div class="bean-card-footer">
+        <div style="display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:end;flex-wrap:wrap;">
+          <div class="bean-pricing">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th data-i18n="beans.label.price">價格</th>
+                  <th data-i18n="beans.label.100g">100g</th>
+                  <th data-i18n="beans.label.200g">200g</th>
+                  <th data-i18n="beans.label.1lb">一磅 (454g)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>NT$</td>
+                  <td class="price-unavail">—</td>
+                  <td class="price-unavail">—</td>
+                  <td>1,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a href="contact.html" class="btn btn-green" data-i18n="beans.cta.order">聯絡訂購</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ FOOTER ════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Edison Coffee</div>
+        <p data-i18n="footer.tagline">花蓮精品烘焙，每一杯都是故事</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.quicklinks">快速連結</h4>
+        <div class="footer-links">
+          <a href="index.html" data-i18n="nav.home">首頁</a>
+          <a href="beans.html" data-i18n="nav.beans">咖啡豆</a>
+          <a href="menu.html" data-i18n="nav.menu">菜單</a>
+          <a href="contact.html" data-i18n="nav.contact">聯絡我們</a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact">聯絡資訊</h4>
+        <div class="footer-contact-info">
+          <p>(03) 832-5678</p>
+          <p>hello@edisoncoffee.tw</p>
+          <p>LINE: @edisoncoffee</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom" data-i18n="footer.copyright">© 2025 艾迪生咖啡 Edison Coffee. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/i18n.js"></script>
+</body>
+</html>
