@@ -810,3 +810,88 @@ h1, h2, h3, h4 {
 .mt-2 { margin-top: 1rem; }
 .mt-3 { margin-top: 1.5rem; }
 .flex-between { display: flex; justify-content: space-between; align-items: center; }
+
+/* ── PHOTO IMAGES ────────────────────────────────────────── */
+/* About section image (above the dark card) */
+.about-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--radius) var(--radius) 0 0;
+  display: block;
+}
+.about-img + .about-card {
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+/* Featured card image — bleeds to card edges */
+.featured-card-img {
+  width: calc(100% + 3.5rem);
+  height: 180px;
+  object-fit: cover;
+  margin: -1.75rem -1.75rem 0.75rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+  display: block;
+}
+
+/* Bean card image — bleeds to card edges */
+.bean-card-img {
+  width: calc(100% + 5rem);
+  height: 220px;
+  object-fit: cover;
+  margin: -2.5rem -2.5rem 2rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+  display: block;
+}
+
+/* ── PHOTO GALLERY (index page) ─────────────────────────── */
+.gallery-section {
+  padding: 0 0 5rem;
+  overflow: hidden;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.gallery-grid img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ── PHOTO BANNER (menu / other pages) ──────────────────── */
+.photo-banner {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── CONTACT ATMOSPHERE IMAGE ───────────────────────────── */
+.contact-atmo-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+  margin-top: 2rem;
+}
+
+/* Responsive additions */
+@media (max-width: 900px) {
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 640px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-grid img { height: 220px; }
+  .photo-banner { height: 200px; }
+  .bean-card-img { margin: -1.5rem -1.5rem 1.5rem; }
+}
